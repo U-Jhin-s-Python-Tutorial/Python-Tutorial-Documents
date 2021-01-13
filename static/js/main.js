@@ -84,6 +84,16 @@ $("#pts02").click(function () {
 });
 
 
+$("#pts03").click(function () {
+    $.ajax({
+        url: "static/html/doc/python-tutorial/summary/03. Python Easter Eggs.html",
+        success: function (result) {
+            $("#content").html(result);
+        }
+    });
+});
+
+
 // Web Tutorial Documents
 
 $("#pwt00").click(function () {
